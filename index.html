@@ -133,27 +133,131 @@
         </section>
 
         <section id="tier-list" class="mt-20 md:mt-28 scroll-mt-20">
-            <h2 class="text-3xl md:text-4xl font-bold text-center text-white text-glow-magenta">Wittle Defender Hero Tier List (June 2025)</h2>
-            <p class="mt-3 text-center text-slate-400">A preview of the best S-Tier heroes based on the latest meta.</p>
-            <div class="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-slate-800 p-6 rounded-lg border-2 border-fuchsia-500 shadow-lg shadow-fuchsia-500/10 transform hover:scale-105 transition-transform">
-                    <h3 class="text-2xl font-bold text-fuchsia-400 text-glow-magenta">Sword Saint</h3>
-                    <p class="text-sm text-fuchsia-300 mb-4">S-Tier / Overpowered</p>
-                    <p class="text-slate-300">Deals high damage even without going all-in on upgrades. Excellent boss killer.</p>
-                </div>
-                <div class="bg-slate-800 p-6 rounded-lg border-2 border-cyan-400 shadow-lg shadow-cyan-500/10 transform hover:scale-105 transition-transform">
-                    <h3 class="text-2xl font-bold text-cyan-400 text-glow-cyan">God Ruler</h3>
-                     <p class="text-sm text-cyan-300 mb-4">S-Tier / Overpowered</p>
-                    <p class="text-slate-300">Highest potential damage in the game with massive AoE for clearing waves.</p>
-                </div>
-                 <div class="bg-slate-800 p-6 rounded-lg border-2 border-slate-600 shadow-lg shadow-slate-600/10 transform hover:scale-105 transition-transform">
-                    <h3 class="text-2xl font-bold text-slate-200">Robot</h3>
-                     <p class="text-sm text-slate-400 mb-4">S-Tier / Overpowered</p>
-                     <p class="text-slate-300">Second-highest DPS and can be upgraded to become a powerful frontline tank.</p>
-                </div>
+            <div class="text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-white text-glow-magenta">Wittle Defender Hero Tier List (June 2025)</h2>
+                <p class="mt-3 text-slate-400">The definitive ranking of all defenders. Find the best units for your team.</p>
             </div>
-             <div class="mt-8 text-center">
-                 <a href="/tier-list" class="text-fuchsia-400 font-semibold hover:underline">See the Full Tier List & Detailed Analysis →</a>
+
+            <div class="mt-12 bg-slate-800 border border-slate-700 rounded-xl p-2 md:p-6 overflow-x-auto">
+                <table class="w-full text-left">
+                    <thead class="bg-slate-700/50">
+                        <tr>
+                            <th class="p-4 text-fuchsia-400 font-semibold">Tier</th>
+                            <th class="p-4 text-fuchsia-400 font-semibold">Defenders</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-700">
+                        <tr><td class="p-4 font-bold text-2xl text-fuchsia-400">S</td><td class="p-4">Sword Saint, Robot, God Ruler</td></tr>
+                        <tr><td class="p-4 font-bold text-2xl text-cyan-400">A</td><td class="p-4">Demon Spawn, Fire Witch, Swordmaster, Blazing Archer, Ice Demon, Ice Witch</td></tr>
+                        <tr><td class="p-4 font-bold text-2xl text-slate-200">B</td><td class="p-4">Cat Assassin, Night Baron, Thunder Pharaoh, Fire Mage, High Priest</td></tr>
+                        <tr><td class="p-4 font-bold text-2xl text-slate-400">C</td><td class="p-4">Demon Hunter, Ice Mage</td></tr>
+                        <tr><td class="p-4 font-bold text-2xl text-slate-500">D</td><td class="p-4">Frankenstein, Ice Wolf Pup, and other Epic/Common units.</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="mt-16 space-y-16">
+                <div>
+                    <h3 class="text-2xl font-bold text-fuchsia-400 text-glow-magenta mb-6 border-b-2 border-fuchsia-500 pb-2">Overpowered (S Tier)</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="bg-slate-800 p-6 rounded-lg border border-slate-700">
+                            <h4 class="text-xl font-bold text-white">Sword Saint</h4>
+                            <ul class="mt-4 space-y-2 text-slate-300">
+                                <li class="flex gap-2"><span class="text-green-400">+</span> Deals high damage even without full upgrades.</li>
+                                <li class="flex gap-2"><span class="text-green-400">+</span> Excellent targeting system for focusing on bosses.</li>
+                            </ul>
+                        </div>
+                        <div class="bg-slate-800 p-6 rounded-lg border border-slate-700">
+                            <h4 class="text-xl font-bold text-white">God Ruler</h4>
+                            <ul class="mt-4 space-y-2 text-slate-300">
+                                <li class="flex gap-2"><span class="text-green-400">+</span> Highest potential damage in the game with a few upgrades.</li>
+                                <li class="flex gap-2"><span class="text-green-400">+</span> Massive AoE damage for clearing waves.</li>
+                            </ul>
+                        </div>
+                        <div class="bg-slate-800 p-6 rounded-lg border border-slate-700">
+                            <h4 class="text-xl font-bold text-white">Robot</h4>
+                            <ul class="mt-4 space-y-2 text-slate-300">
+                                <li class="flex gap-2"><span class="text-green-400">+</span> Second-highest damage dealer, great against high HP targets.</li>
+                                <li class="flex gap-2"><span class="text-green-400">+</span> Can be upgraded to become a powerful frontline tank.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-2xl font-bold text-cyan-400 text-glow-cyan mb-6 border-b-2 border-cyan-500 pb-2">Extremely Strong (A Tier)</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="bg-slate-800 p-6 rounded-lg border border-slate-700">
+                            <h4 class="text-xl font-bold text-white">Demon Spawn</h4>
+                            <ul class="mt-4 space-y-2 text-slate-300">
+                                <li class="flex gap-2"><span class="text-green-400">+</span> Tons of single-target damage, perfect for bosses.</li>
+                                <li class="flex gap-2"><span class="text-red-400">-</span> Relies on RNG for good upgrades, slow base attack speed.</li>
+                            </ul>
+                        </div>
+                        <div class="bg-slate-800 p-6 rounded-lg border border-slate-700">
+                            <h4 class="text-xl font-bold text-white">Fire Witch</h4>
+                             <ul class="mt-4 space-y-2 text-slate-300">
+                                <li class="flex gap-2"><span class="text-green-400">+</span> High damage against waves of enemies.</li>
+                                <li class="flex gap-2"><span class="text-red-400">-</span> Skill has a long cooldown.</li>
+                            </ul>
+                        </div>
+                        <div class="bg-slate-800 p-6 rounded-lg border border-slate-700">
+                            <h4 class="text-xl font-bold text-white">Swordmaster</h4>
+                             <ul class="mt-4 space-y-2 text-slate-300">
+                                <li class="flex gap-2"><span class="text-green-400">+</span> Optimal against waves due to high damage.</li>
+                                <li class="flex gap-2"><span class="text-red-400">-</span> Not good against bosses.</li>
+                            </ul>
+                        </div>
+                        <div class="bg-slate-800 p-6 rounded-lg border border-slate-700">
+                            <h4 class="text-xl font-bold text-white">Blazing Archer</h4>
+                             <ul class="mt-4 space-y-2 text-slate-300">
+                                <li class="flex gap-2"><span class="text-green-400">+</span> Provides utility by spawning units.</li>
+                                <li class="flex gap-2"><span class="text-green-400">+</span> Good damage against both waves and bosses.</li>
+                            </ul>
+                        </div>
+                        <div class="bg-slate-800 p-6 rounded-lg border border-slate-700">
+                            <h4 class="text-xl font-bold text-white">Ice Demon</h4>
+                             <ul class="mt-4 space-y-2 text-slate-300">
+                                <li class="flex gap-2"><span class="text-green-400">+</span> Summons units to distract and tank for the team.</li>
+                                <li class="flex gap-2"><span class="text-red-400">-</span> Relies on the team for consistent DPS.</li>
+                            </ul>
+                        </div>
+                         <div class="bg-slate-800 p-6 rounded-lg border border-slate-700">
+                            <h4 class="text-xl font-bold text-white">Ice Witch</h4>
+                             <ul class="mt-4 space-y-2 text-slate-300">
+                                <li class="flex gap-2"><span class="text-green-400">+</span> Can freeze enemies, providing crowd control.</li>
+                                <li class="flex gap-2"><span class="text-red-400">-</span> Relies heavily on upgrades to be effective.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                 <div>
+                    <h3 class="text-2xl font-bold text-slate-200 mb-6 border-b-2 border-slate-600 pb-2">Somewhat Useful (B Tier)</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="bg-slate-800 p-6 rounded-lg border border-slate-700">
+                            <h4 class="text-xl font-bold text-white">Cat Assassin</h4>
+                             <ul class="mt-4 space-y-2 text-slate-300">
+                                <li class="flex gap-2"><span class="text-green-400">+</span> Good single-target damage.</li>
+                                <li class="flex gap-2"><span class="text-red-400">-</span> Upgrades are not worth investing in.</li>
+                            </ul>
+                        </div>
+                        <div class="bg-slate-800 p-6 rounded-lg border border-slate-700">
+                            <h4 class="text-xl font-bold text-white">Night Baron</h4>
+                             <ul class="mt-4 space-y-2 text-slate-300">
+                                <li class="flex gap-2"><span class="text-green-400">+</span> Valuable for his powerful chain link synergy.</li>
+                                <li class="flex gap-2"><span class="text-red-400">-</span> Not a strong character on his own.</li>
+                            </ul>
+                        </div>
+                         <div class="bg-slate-800 p-6 rounded-lg border border-slate-700">
+                            <h4 class="text-xl font-bold text-white">Thunder Pharaoh</h4>
+                             <ul class="mt-4 space-y-2 text-slate-300">
+                                <li class="flex gap-2"><span class="text-green-400">+</span> Pairs well with Robot for enhanced damage.</li>
+                                <li class="flex gap-2"><span class="text-red-400">-</span> Low initial damage.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
