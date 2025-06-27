@@ -1,0 +1,22 @@
+body { 
+    font-family: 'Inter', 'Noto Sans TC', sans-serif; 
+}
+.text-glow-magenta { 
+    text-shadow: 0 0 8px rgba(236, 72, 153, 0.7), 0 0 12px rgba(236, 72, 153, 0.5); 
+}
+.text-glow-cyan { 
+    text-shadow: 0 0 8px rgba(34, 211, 238, 0.7), 0 0 12px rgba(34, 211, 238, 0.5); 
+}
+.aspect-w-16 { 
+    position: relative; 
+    width: 100%; 
+    padding-bottom: 56.25%; 
+}
+.aspect-h-9 { }
+.aspect-w-16 > iframe { 
+    position: absolute; 
+    width: 100%; 
+    height: 100%; 
+    top: 0; 
+    left: 0; 
+}
