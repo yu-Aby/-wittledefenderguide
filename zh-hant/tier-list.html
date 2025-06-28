@@ -7,45 +7,41 @@
     <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body class="bg-slate-900 text-slate-300">
-    <header>
-        </header>
-
-    <main class="container mx-auto px-6 py-12 md:py-16">
-        <section id="tier-list">
-            <div class="text-center">
-                <h1 class="text-4xl md:text-5xl font-extrabold text-white leading-tight text-glow-magenta">Wittle Defender 英雄強度排名</h1>
-                <p class="mt-4 text-lg text-slate-400 max-w-3xl mx-auto">這份權威排名基於 2025 年 6 月的遊戲 Meta，綜合社群數據與專家分析，旨在幫助您建立最強大的隊伍。</p>
-            </div>
-            <div class="mt-12 bg-slate-800 border border-slate-700 rounded-xl p-2 md:p-6 overflow-x-auto">
-                <table class="w-full text-left"><thead class="bg-slate-700/50"><tr><th class="p-4 text-fuchsia-400 font-semibold">級別</th><th class="p-4 text-fuchsia-400 font-semibold">英雄</th></tr></thead><tbody class="divide-y divide-slate-700"><tr><td class="p-4 font-bold text-2xl text-fuchsia-400">S</td><td class="p-4">劍聖, 機器人, 神之統治者</td></tr><tr><td class="p-4 font-bold text-2xl text-cyan-400">A</td><td class="p-4">惡魔之子, 火焰女巫, 劍術大師, 烈焰射手, 冰魔, 冰之女巫</td></tr><tr><td class="p-4 font-bold text-2xl text-slate-200">B</td><td class="p-4">貓刺客, 暗夜男爵, 雷電法老, 火焰法師, 大祭司</td></tr><tr><td class="p-4 font-bold text-2xl text-slate-400">C</td><td class="p-4">惡魔獵手, 冰法師</td></tr><tr><td class="p-4 font-bold text-2xl text-slate-500">D</td><td class="p-4">科學怪人, 冰狼幼崽, 及其他史詩/普通單位。</td></tr></tbody></table>
-            </div>
-
-            <div class="mt-16 space-y-16">
-                 <div>
-                    <h2 class="text-3xl font-bold text-fuchsia-400 text-glow-magenta mb-6 border-b-2 border-fuchsia-500 pb-3">神級 (S Tier)</h2>
-                    <p class="mb-8 text-slate-400">這個級別的單位是遊戲中最頂尖的，因為它們擁有良好的 AoE 法術和高傷害。他們可以毫無問題地清除大量的敵方波次。</p>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <div class="bg-slate-800 p-6 rounded-lg border border-slate-700"><h3 class="text-xl font-bold text-white">劍聖</h3><ul class="mt-4 space-y-2 text-slate-300"><li class="flex gap-2"><span class="text-green-400">+</span> 無需全力升級即可造成高額傷害。</li><li class="flex gap-2"><span class="text-green-400">+</span> 優秀的鎖定機制，便於集火Boss。</li></ul></div>
-                        <div class="bg-slate-800 p-6 rounded-lg border border-slate-700"><h3 class="text-xl font-bold text-white">神之統治者</h3><ul class="mt-4 space-y-2 text-slate-300"><li class="flex gap-2"><span class="text-green-400">+</span> 遊戲中潛在傷害最高。</li><li class="flex gap-2"><span class="text-green-400">+</span> 巨量的範圍傷害，清場能力極強。</li></ul></div>
-                        <div class="bg-slate-800 p-6 rounded-lg border border-slate-700"><h3 class="text-xl font-bold text-white">機器人</h3><ul class="mt-4 space-y-2 text-slate-300"><li class="flex gap-2"><span class="text-green-400">+</span> 傷害輸出名列第二。</li><li class="flex gap-2"><span class="text-green-400">+</span> 可被培養成強大的前排坦克。</li></ul></div>
+    <header class="bg-slate-900/80 backdrop-blur-lg sticky top-0 z-50 border-b border-slate-700">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="/zh-hant/" class="text-xl font-bold text-white text-glow-magenta">Wittle Defender 攻略</a>
+            <div class="flex items-center">
+                <div class="hidden md:flex space-x-8">
+                    <a href="codes.html" class="text-slate-300 hover:text-fuchsia-400 transition-colors">兌換碼</a>
+                    <a href="tier-list.html" class="text-white font-semibold">英雄排名</a>
+                    <a href="about-contact.html" class="text-slate-300 hover:text-fuchsia-400 transition-colors">關於我們</a>
+                </div>
+                <div class="relative ml-4 md:ml-8" id="language-switcher">
+                    <button class="flex items-center bg-slate-800 text-slate-300 rounded-md px-3 py-2 hover:bg-slate-700 transition-colors focus:outline-none ring-2 ring-transparent focus:ring-fuchsia-500"><span class="text-sm font-semibold">繁體中文</span><svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
+                    <div class="hidden absolute right-0 mt-2 w-48 bg-slate-800 border border-slate-700 rounded-lg shadow-lg py-2 z-20">
+                        <a href="/tier-list.html" class="block px-4 py-2 text-sm text-slate-200 hover:bg-slate-700 hover:text-white">English</a>
+                        <a href="/zh-hant/tier-list.html" class="flex items-center gap-3 px-4 py-2 text-sm text-white bg-slate-700">繁體中文 <span class="text-xs text-fuchsia-400">(目前)</span></a>
                     </div>
                 </div>
-                 </div>
+            </div>
+        </nav>
+    </header>
+    <main class="container mx-auto px-6 py-12 md:py-16">
+        <section id="tier-list">
+            <div class="text-center"><h1 class="text-4xl md:text-5xl font-extrabold text-white leading-tight text-glow-magenta">Wittle Defender 英雄強度排名</h1><p class="mt-4 text-lg text-slate-400 max-w-3xl mx-auto">這份權威排名基於 2025 年 6 月的遊戲 Meta，綜合社群數據與專家分析，旨在幫助您建立最強大的隊伍。</p></div>
+            <div class="mt-12 bg-slate-800 border border-slate-700 rounded-xl p-2 md:p-6 overflow-x-auto"><table class="w-full text-left"><thead class="bg-slate-700/50"><tr><th class="p-4 text-fuchsia-400 font-semibold">級別</th><th class="p-4 text-fuchsia-400 font-semibold">英雄</th></tr></thead><tbody class="divide-y divide-slate-700"><tr><td class="p-4 font-bold text-2xl text-fuchsia-400">S</td><td class="p-4">劍聖, 機器人, 神之統治者</td></tr><tr><td class="p-4 font-bold text-2xl text-cyan-400">A</td><td class="p-4">惡魔之子, 火焰女巫, 劍術大師, 烈焰射手, 冰魔, 冰之女巫</td></tr><tr><td class="p-4 font-bold text-2xl text-slate-200">B</td><td class="p-4">貓刺客, 暗夜男爵, 雷電法老, 火焰法師, 大祭司</td></tr><tr><td class="p-4 font-bold text-2xl text-slate-400">C</td><td class="p-4">惡魔獵手, 冰法師</td></tr><tr><td class="p-4 font-bold text-2xl text-slate-500">D</td><td class="p-4">科學怪人, 冰狼幼崽, 及其他史詩/普通單位。</td></tr></tbody></table></div>
+            <div class="mt-16 space-y-16">
+                <div><h2 class="text-3xl font-bold text-fuchsia-400 text-glow-magenta mb-6 border-b-2 border-fuchsia-500 pb-3">神級 (S Tier)</h2><p class="mb-8 text-slate-400">這個級別的單位是遊戲中最頂尖的，因為它們擁有良好的 AoE 法術和高傷害。他們可以毫無問題地清除大量的敵方波次。</p><div class="grid grid-cols-1 md:grid-cols-2 gap-6"><div class="bg-slate-800 p-6 rounded-lg border border-slate-700"><h3 class="text-xl font-bold text-white">劍聖</h3><ul class="mt-4 space-y-2 text-slate-300"><li class="flex gap-2"><span class="text-green-400">+</span> 無需全力升級即可造成高額傷害。</li><li class="flex gap-2"><span class="text-green-400">+</span> 優秀的鎖定機制，便於集火Boss。</li></ul></div><div class="bg-slate-800 p-6 rounded-lg border border-slate-700"><h3 class="text-xl font-bold text-white">神之統治者</h3><ul class="mt-4 space-y-2 text-slate-300"><li class="flex gap-2"><span class="text-green-400">+</span> 遊戲中潛在傷害最高。</li><li class="flex gap-2"><span class="text-green-400">+</span> 巨量的範圍傷害，清場能力極強。</li></ul></div><div class="bg-slate-800 p-6 rounded-lg border border-slate-700"><h3 class="text-xl font-bold text-white">機器人</h3><ul class="mt-4 space-y-2 text-slate-300"><li class="flex gap-2"><span class="text-green-400">+</span> 傷害輸出名列第二。</li><li class="flex gap-2"><span class="text-green-400">+</span> 可被培養成強大的前排坦克。</li></ul></div></div></div>
+                </div>
         </section>
     </main>
-
-   <header class="bg-slate-900/80 backdrop-blur-lg sticky top-0 z-50 border-b border-slate-700">
-    <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-        <a href="/zh-hant/" class="text-xl font-bold text-white text-glow-magenta">Wittle Defender 攻略</a>
-        <div class="flex items-center">
-            <div class="hidden md:flex space-x-8">
-                <a href="/zh-hant/#codes" class="text-slate-300 hover:text-fuchsia-400 transition-colors">兌換碼</a>
-                <a href="/zh-hant/tier-list.html" class="text-slate-300 hover:text-fuchsia-400 transition-colors">英雄排名</a>
-                <a href="/zh-hant/about-contact.html" class="text-slate-300 hover:text-fuchsia-400 transition-colors">關於我們</a>
-            </div>
-            </div>
-    </nav>
-</header>
+    <footer class="border-t border-slate-700 mt-20 md:mt-28">
+        <div class="container mx-auto px-6 py-8 text-center text-slate-500">
+            <div class="flex justify-center flex-wrap gap-x-6 gap-y-2 mb-6"><a href="about-contact.html" class="hover:text-cyan-400 transition-colors">關於 / 聯絡我們</a><a href="privacy-policy.html" class="hover:text-cyan-400 transition-colors">隱私權政策</a></div>
+            <p>© 2025 WittleDefenderGuide.com. 版權所有。</p>
+            <p class="text-sm mt-2">WittleDefenderGuide.com 為非官方粉絲網站，與 Habby 無關。</p>
+        </div>
+    </footer>
     <script src="../assets/js/main.js"></script>
 </body>
 </html>
